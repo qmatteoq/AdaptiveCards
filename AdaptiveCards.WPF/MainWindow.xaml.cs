@@ -1,20 +1,9 @@
 ﻿using AdaptiveCards.Rendering.Wpf;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Http;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Windows.ApplicationModel.UserActivities;
 using Windows.UI.Shell;
 
@@ -37,11 +26,15 @@ namespace AdaptiveCards.WPF
         private async void OnRenderAdaptiveCard(object sender, RoutedEventArgs e)
         {
             AdaptiveCardRenderer renderer = new AdaptiveCardRenderer();
-            string result = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            int index = result.LastIndexOf("\\");
-            string jsonPath = $"{result.Substring(0, index)}\\adaptivecard.json";
-            TextReader tr = new StreamReader(jsonPath);
-            string json = await tr.ReadToEndAsync();
+
+            //string result = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            //int index = result.LastIndexOf("\\");
+            //string jsonPath = $"{result.Substring(0, index)}\\adaptivecard.json";
+            //TextReader tr = new StreamReader(jsonPath);
+            //string json = await tr.ReadToEndAsync();
+
+            HttpClient client = new HttpClient();
+            string json = await client.GetStringAsync("https://adaptivecard.azurewebsites.net/api/AppConsultAdaptiveCards?code=AzSEpdNE/P0c9OFIBjro2vSKwGIlLdBWdc53/jmR7Y9PX2l1Ks0/nQ==");
             AdaptiveCardParseResult card = AdaptiveCard.FromJson(json);
             
             var renderResult = renderer.RenderCard(card.Card);
