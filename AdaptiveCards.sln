@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaptiveCards.Function", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaptiveCards.Parser", "AdaptiveCards.Parser\AdaptiveCards.Parser.csproj", "{54E1F534-D950-4956-9F8E-C49B319B1598}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaptiveCards.Bot", "AdaptiveCards.Bot\AdaptiveCards.Bot.csproj", "{D13822CE-2FBF-4167-9EDD-14CCE627375D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,18 @@ Global
 		{54E1F534-D950-4956-9F8E-C49B319B1598}.Release|x64.Build.0 = Release|Any CPU
 		{54E1F534-D950-4956-9F8E-C49B319B1598}.Release|x86.ActiveCfg = Release|Any CPU
 		{54E1F534-D950-4956-9F8E-C49B319B1598}.Release|x86.Build.0 = Release|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Debug|x64.Build.0 = Debug|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Debug|x86.Build.0 = Debug|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Release|x64.ActiveCfg = Release|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Release|x64.Build.0 = Release|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Release|x86.ActiveCfg = Release|Any CPU
+		{D13822CE-2FBF-4167-9EDD-14CCE627375D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

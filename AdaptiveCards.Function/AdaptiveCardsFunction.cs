@@ -35,7 +35,7 @@ namespace AdaptiveCards.Function
 
             AdaptiveColumn photoColumn = new AdaptiveColumn
             {
-                Width = "Auto"
+                Width = "auto"
             };
             AdaptiveImage image = new AdaptiveImage
             {
@@ -62,7 +62,7 @@ namespace AdaptiveCards.Function
 
             AdaptiveColumn authorColumn = new AdaptiveColumn
             {
-                Width = "Stretch"
+                Width = "stretch"
             };
             authorColumn.Items.Add(name);
             authorColumn.Items.Add(date);
