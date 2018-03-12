@@ -76,9 +76,16 @@ namespace AdaptiveCards.Function
                 Wrap = true
             };
 
+            AdaptiveOpenUrlAction action = new AdaptiveOpenUrlAction
+            {
+                Url = new Uri(lastNews.Link),
+                Title = "View"
+            };
+
             card.Body.Add(title);
             card.Body.Add(columnSet);
             card.Body.Add(body);
+            card.Actions.Add(action);
 
             string json = card.ToJson();
 
