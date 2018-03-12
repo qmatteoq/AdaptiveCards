@@ -19,8 +19,14 @@ namespace AdaptiveCards.WPF
             {
                 if (e.Args[0].Contains("adaptivecards"))
                 {
-
+                    OpenLastPost openWindow = new OpenLastPost();
+                    openWindow.Show();
                 }
+            }
+            else
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
             }
         }
     }

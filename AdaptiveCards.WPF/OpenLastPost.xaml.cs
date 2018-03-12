@@ -29,6 +29,7 @@ namespace AdaptiveCards.WPF
                 {
                     var urlAction = action as AdaptiveOpenUrlAction;
                     Process.Start(urlAction.Url.ToString());
+                    Application.Current.Shutdown();
                 }
             }
         }
